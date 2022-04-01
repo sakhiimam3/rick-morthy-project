@@ -1,0 +1,46 @@
+.logo {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.toogle_btn {
+    display: none;
+}
+
+.menu {
+    
+    a{
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-transform: capitalize;
+        text-decoration: none !important;
+          color: black;
+        
+         
+       
+        
+    }
+
+   
+}
+.active{
+    color: blue !important;
+    border-bottom: 2px soli blue !important;
+}
+
+// media querries
+
+@media(max-width:'600px') {
+    .toogle_btn {
+        display: block;
+    }
+    .menu {
+        a{
+        display: none !important;
+        }
+
+    }
+
+}

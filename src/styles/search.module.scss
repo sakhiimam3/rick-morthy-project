@@ -1,0 +1,14 @@
+input{
+      width: 40%;
+      padding: 10px 15px;
+      border: 1px solid blue;
+      box-shadow: 0.5px 0.5px 4px rgba($color: #0056f7, $alpha: 1.0);
+      &:focus{
+           outline: none;
+      }
+}
+
+.search_btn{
+     text-transform: capitalize;
+     font-size: 20px;
+}
