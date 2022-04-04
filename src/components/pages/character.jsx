@@ -6,8 +6,7 @@ import SideMenu from "../presentation/sideMenu";
 import Card from "../presentation/card";
 import Pagination from "../presentation/pagination";
 import SearchBtn from "../presentation/searchbar";
-import Species from "../category/species";
-
+import species from '../category/species'
 
 const Character = () => {
 
@@ -16,14 +15,22 @@ const Character = () => {
   const [isloading, setIsloading] = useState(false);
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("");
-  const [gender,setGender]=useState("")
-  const [species,setSpecies]=useState("")
+  const [gender, setGender] = useState("")
+  const [species, setSpecies] = useState("")
 
 
   const api = `https://rickandmortyapi.com/api/character/?page=${pagenumber}&name=${search}&status=${status}&gender=${gender}&species=${species}`;
 
+  
+
+  
+   
   //  destrucuring for pagiantion
   let { info, results } = apiresults;
+
+
+
+
 
   useEffect(() => {
     (async function () {
@@ -61,11 +68,13 @@ const Character = () => {
 
           {/* side menu  grid */}
 
-          <SideMenu 
-          setStatus={setStatus}
-          setPageNumber={setPageNumber}
-          setGender={setGender}
-          setSpecies={setSpecies}
+          <SideMenu
+            setStatus={setStatus}
+            setPageNumber={setPageNumber}
+            setGender={setGender}
+            setSpecies={setSpecies}
+            setResult={setResult}
+            apiresults={apiresults}
           />
 
           {/* col all cards grid   */}

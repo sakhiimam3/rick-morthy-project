@@ -8,6 +8,7 @@ const Location = () => {
   const [isloading, setIsloading] = useState(false);
   const [results, setResults] = useState([])
   const [info, setInfo] = useState([])
+
 console.log(info)
   let {  name,type } = info
 
@@ -18,9 +19,9 @@ console.log(info)
   useEffect(() => {
     (async function () {
       try {
-        setIsloading(true)
-        let data = await fetch(api).then((res) => res.json())
-        setInfo(data);
+             setIsloading(true)
+             let data = await fetch(api).then((res) => res.json())
+             setInfo(data);
   
         let locationdata = await Promise.all(
           data.residents.map((x) => {

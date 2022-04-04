@@ -23,7 +23,7 @@ const Header = () => {
       placement="end"
     >
  
-      <Offcanvas.Header closeButton>
+      <Offcanvas.Header  onClick={()=>Navigate("/")} closeButton>
       <Offcanvas.Title id="offcanvasNavbarLabel"> Rick & Morty WiKi </Offcanvas.Title> 
       </Offcanvas.Header>
       <style jsx>

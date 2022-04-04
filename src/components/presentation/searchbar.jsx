@@ -3,6 +3,9 @@ import { Button } from 'react-bootstrap'
 import Styles from "../../styles/search.module.scss"
 
 const SearchBtn = ({setSearch,setPageNumber}) => {
+
+    
+    
   let searchBtn = (e) => {
     e.preventDefault();
   };
